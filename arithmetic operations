@@ -1,0 +1,64 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPnUljrYfvE5Uy4Z66EQ/P7",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/LakshminandaKP/Python/blob/main/arithmetic%20operations\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 4,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gwrhAhZzMCue",
+        "outputId": "e1b7ca88-900d-4422-9784-6c6aef6b50bf"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n",
+            "4\n",
+            "7\n",
+            "-1\n",
+            "12\n"
+          ]
+        }
+      ],
+      "source": [
+        "a = int(input())\n",
+        "b = int(input())\n",
+        "s=a+b\n",
+        "d=a-b\n",
+        "p=a*b\n",
+        "print(s)\n",
+        "print(d)\n",
+        "print(p)"
+      ]
+    }
+  ]
+}
