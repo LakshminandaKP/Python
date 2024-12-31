@@ -1,0 +1,253 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "mount_file_id": "195XV7hiY3-ZXRdsDocZSS3wmXy34ndLk",
+      "authorship_tag": "ABX9TyMVHTq2UFODgaiRVa/7SdvL",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/LakshminandaKP/Python/blob/main/python%20programs\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def is_leap(year):\n",
+        "    leap = False\n",
+        "    if year%4==0:\n",
+        "        leap=True\n",
+        "        if year%100==0:\n",
+        "            leap=False\n",
+        "            if year%400==0:\n",
+        "                leap=True\n",
+        "\n",
+        "    # Write your logic here\n",
+        "\n",
+        "    return leap\n",
+        "\n",
+        "year = int(input())\n",
+        "print(is_leap(year))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CzmRhLIoxBBh",
+        "outputId": "01f98d92-bad1-4359-a884-e27b4a94967d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2024\n",
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "s=\"dpt softwares and electronics\"\n",
+        "l=s.split()\n",
+        "for x in l:\n",
+        "  print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SfvKcT1DxTMY",
+        "outputId": "727f8732-1ce1-47bf-efa0-fc63a09359d5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "dpt\n",
+            "softwares\n",
+            "and\n",
+            "electronics\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "  s=\"leARning pytHon is eAsy \"\n",
+        "  print(s.upper())\n",
+        "  print(s.lower())\n",
+        "  print(s.swapcase())\n",
+        "  print(s.title())\n",
+        "  print(s.capitalize())\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "r20rFG4ixhwI",
+        "outputId": "afc2edd7-08ff-4ea4-de90-f19da6934973"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "LEARNING PYTHON IS EASY \n",
+            "learning python is easy \n",
+            "LEarNING PYThON IS EaSY \n",
+            "Learning Python Is Easy \n",
+            "Learning python is easy \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "s=\"hello\"\n",
+        "i=-1\n",
+        "while (i!=-1*len(s)-1):\n",
+        "  print(s[i],end=\"\")\n",
+        "  i=i-1\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "90NvJH1Tzazs",
+        "outputId": "da1c238a-beb6-41a2-80a4-f164a443b7f7"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "olleh"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "s=\"Learning Python is Very Easy\"\n",
+        "l=s.split()\n",
+        "r=l[ : :-1]\n",
+        "print(\" \".join(r))\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7r3ZuaSj2z1c",
+        "outputId": "90b04840-3259-4d54-c211-f258004d62e3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Easy Very is Python Learning\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a,b=input().split(\",\")\n",
+        "if len(a)==len(b):\n",
+        "  for i in range(0,len(a),1):\n",
+        "    print(a[i],b[i],end=\"\",sep=\"\")\n",
+        "else:\n",
+        "  print(\"invalid input\")\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4TAhJjWr7h23",
+        "outputId": "00ea5b1c-7d2c-4f66-d2ab-104aa6fa14b0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "kochi,bhj\n",
+            "invalid input\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "s=list(input(\"enter string: \"))\n",
+        "asci=[]\n",
+        "final=[]\n",
+        "for i in s:\n",
+        "  a=ord(i)\n",
+        "  asci.append(a)\n",
+        "sort=set(asci)\n",
+        "for x in sort:\n",
+        "  print(chr(x),end=\"\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-iQaZOpoCYwS",
+        "outputId": "bc9c1120-30d7-4fb4-ce64-40e9797458bc"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter string: aadvvvfgtttedddswsswsw\n",
+            "adefgstvw"
+          ]
+        }
+      ]
+    }
+  ]
+}
